@@ -34,7 +34,8 @@ export interface SlotCounterProps {
   animateOnMount?: boolean;
   /**
    * Honor the user's `prefers-reduced-motion` setting by skipping the roll.
-   * Default `true` (recommended for accessibility). Set `false` to always animate.
+   * Default `false` (always animate). Set `true` to skip the roll for users who
+   * prefer reduced motion (recommended for accessibility).
    */
   respectReducedMotion?: boolean;
   /** CSS transition easing for the roll. Default `'cubic-bezier(0.16, 1, 0.3, 1)'`. */
@@ -127,7 +128,7 @@ const SlotCounter = forwardRef<SlotCounterRef, SlotCounterProps>(function SlotCo
     spins = 1,
     direction = 'bottom-up',
     animateOnMount = true,
-    respectReducedMotion = true,
+    respectReducedMotion = false,
     easing = 'cubic-bezier(0.16, 1, 0.3, 1)',
     className,
     style,
