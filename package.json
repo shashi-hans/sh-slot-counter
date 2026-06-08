@@ -37,6 +37,14 @@
     "count-up"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shashi-hans/sh-slot-counter.git"
+  },
+  "homepage": "https://github.com/shashi-hans/sh-slot-counter#readme",
+  "bugs": {
+    "url": "https://github.com/shashi-hans/sh-slot-counter/issues"
+  },
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
