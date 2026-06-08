@@ -36,6 +36,7 @@
     "rolling",
     "count-up"
   ],
+  "author": "Shashi Hans <shashi.hans@coverstack.in>",
   "license": "MIT",
   "repository": {
     "type": "git",
